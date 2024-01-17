@@ -4,11 +4,11 @@ apply plugin: 'kotlin-android'
 def isLocalAppLovinWorkspace = file("../../../Android-SDK/build.gradle.kts").exists()
 
 android {
-    compileSdkVersion 31
+    compileSdk 33
     defaultConfig {
         applicationId "com.trickytribe.penetrator"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdk 33
         versionCode 10000
         versionName "1.0"
         multiDexEnabled true
@@ -16,7 +16,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -52,6 +52,6 @@ dependencies {
     } else {
         implementation("com.applovin:applovin-sdk:+@aar")
     }
-    implementation("com.moloco.sdk.adapters:applovin:+")
+    implementation("com.moloco.sdk.adapters:applovin:1.3.+")
 
 }
