@@ -52,6 +52,6 @@ dependencies {
     } else {
         implementation("com.applovin:applovin-sdk:+@aar")
     }
-    implementation("com.moloco.sdk.adapters:applovin:1.3.+")
+    implementation("com.moloco.sdk.adapters:applovin:1.7.0.0")
 
 }

@@ -29,7 +29,7 @@ class TemplateNativeAdActivity : BaseAdActivity() {
         nativeAdLayout = findViewById(R.id.native_ad_layout)
         setupCallbacksRecyclerView()
 
-        nativeAdLoader = MaxNativeAdLoader("YOUR_AD_UNIT_ID", this)
+        nativeAdLoader = MaxNativeAdLoader("1b5fce94d2aadf5f", this)
         nativeAdLoader.setRevenueListener(object : MaxAdRevenueListener {
             override fun onAdRevenuePaid(ad: MaxAd) {
                 logCallback()

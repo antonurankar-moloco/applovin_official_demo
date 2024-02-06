@@ -32,7 +32,7 @@ class RewardedAdActivity : BaseAdActivity(),
 
         setupCallbacksRecyclerView()
 
-        rewardedAd = MaxRewardedAd.getInstance("7e9a967368cbad63", this)
+        rewardedAd = MaxRewardedAd.getInstance("76a3c3958c643f5e", this)
 
         rewardedAd.setListener(this)
         rewardedAd.setRevenueListener(this)
